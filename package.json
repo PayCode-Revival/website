@@ -1,0 +1,9 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/PayCode-Revival/website.git",
+  "author": "Idowu Damilare Muyiwa Gabriel <dammy@damilareidowu.com>",
+  "license": "MIT",
+  "homepage": "."
+}

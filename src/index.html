@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PayMaker Africa</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" href="./assets/img/logo-dark.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body class="">
+    <div id="root" class="dark-mode scroll-mode d-flex flex-column">
+      <!-- {{-- Header Start --}} -->
+      <header
+        class="d-flex justify-content-between align-items-center sticky-top p-2"
+      >
+        <!-- {{-- NavBar Toggler For Small Screens --}} -->
+        <div
+          id="navbar-toggle-btn"
+          class="clickable d-flex justify-content-center align-items-center d-sm-none col-2 col-lg-1 p-1"
+        >
+          <span class="material-symbols-outlined" id="navbar-toggler">
+            menu
+          </span>
+        </div>
+
+        <!-- {{-- Identity --}} -->
+        <div id="identity" class="p-2 col-2 col-lg-1">
+          <img
+            id="logo"
+            src="./assets/img/logo-light.png"
+            class="img-fluid w-50"
+            alt=""
+          />
+        </div>
+
+        <!-- {{-- NavBar Menu --}} -->
+        <div
+          class="container-fluid p-3 col d-none d-sm-flex justify-content-between align-items-center"
+        >
+          <!-- {{-- Nav Links --}} -->
+          <span
+            class="p-2 col d-flex justify-content-end align-items-center"
+            id="nav-links"
+          >
+            <a href="#services"><span class="mx-3">Services</span></a>
+            <a href="#about"><span class="mx-3">About</span></a>
+            <a href="#contact"><span class="mx-3">Contact</span></a>
+          </span>
+
+          <!-- {{-- Sign in --}} -->
+          <span class="ms-5" id="sign-in">
+            <button class="button rounded flat-card text-nowrap">
+              Sign in
+            </button>
+          </span>
+        </div>
+
+        <!-- {{-- Theme Toggle --}} -->
+        <div
+          id="theme-toggle-btn"
+          class="clickable d-flex justify-content-center align-items-center col-2 col-lg-1 p-1"
+        >
+          <span class="material-symbols-outlined" id="theme-toggler">
+            light_mode
+          </span>
+        </div>
+      </header>
+      <!-- {{-- Header End --}} -->
+
+      <div
+        id="mobile-navbar"
+        class="container flat-card hidden d-flex justify-content-between p-2 align-items-center"
+      ></div>
+
+      <!-- {{-- Main Start --}} -->
+      <main class="scroll-mode flex-grow-1">
+        <!-- {{-- Hero Section --}} -->
+        <section class="p-2" id="hero-section">
+          <div
+            class="container-fluid d-flex justify-content-center align-items-center rounded flat-card mb-5 section-container"
+          >
+            <!-- {{-- Texts & Button --}} -->
+            <div class="container-fluid d-flex flex-column user-select-none">
+              <span class="d-flex flex-column mt-3">
+                <span class="hero-heading fw-bold">Pay Easy.</span>
+                <span class="hero-heading fw-bold mt-2">Save Simply.</span>
+                <span class="hero-heading fw-bold mt-2">Track & Organize.</span>
+                <span class="fs-6 mt-4 ms-1"
+                  >Experience the perfect and ultimate multi-wallet
+                  system.</span
+                >
+              </span>
+              <span
+                class="d-flex justify-content-start flex-wrap align-items-center my-3 hero-buttons py-3 px-1"
+              >
+                <div class="col col-auto py-1">
+                  <button class="button rounded flat-card">Download</button>
+                </div>
+
+                <div class="col col-auto py-1">
+                  <button class="button rounded flat-card bg-info">
+                    Learn More
+                  </button>
+                </div>
+              </span>
+            </div>
+
+            <!-- {{-- Stock Image --}} -->
+            <div
+              class="col-5 p-1 d-flex justify-content-center align-items-center d-none d-sm-flex"
+            >
+              <img src="./assets/img/hold-card.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+        </section>
+
+        <!-- {{-- Services --}} -->
+        <section id="services" class="p-2 mb-5">
+          <div class="d-flex justify-content-center mb-2">
+            <span class="h3 border-bottom p-2">Services</span>
+          </div>
+          <div
+            class="container p-4 flat-card rounded section-container mb-4 d-flex justify-content-center align-items-center flex-wrap"
+            id="services-section-container"
+          >
+            <div
+              class="col-8 col-md-3 d-flex flex-column justify-content-center align-items-center rounded p-3 flat-card"
+            >
+              <span class="service-icon-container">
+                <span
+                  class="material-symbols-outlined rounded-circle flat-card mb-3 service-icon p-2"
+                  >qr_code</span
+                >
+              </span>
+              <span class="text-center">Pay Anyone Instantly</span>
+            </div>
+
+            <div
+              class="col-8 col-md-3 d-flex flex-column justify-content-center align-items-center rounded p-3 flat-card"
+            >
+              <span class="service-icon-container">
+                <span
+                  class="material-symbols-outlined rounded-circle flat-card mb-3 service-icon p-2"
+                  >wallet</span
+                >
+              </span>
+              <span class="text-center">Multi-Wallet System</span>
+            </div>
+
+            <div
+              class="col-8 col-md-3 d-flex flex-column justify-content-center align-items-center rounded p-3 flat-card"
+            >
+              <span class="service-icon-container">
+                <span
+                  class="material-symbols-outlined rounded-circle flat-card mb-3 service-icon p-2"
+                  >savings</span
+                >
+              </span>
+              <span class="text-center">Easy Savings</span>
+            </div>
+
+            <div
+              class="col-8 col-md-3 d-flex flex-column justify-content-center align-items-center rounded p-3 flat-card"
+            >
+              <span class="service-icon-container">
+                <span
+                  class="material-symbols-outlined rounded-circle flat-card mb-3 service-icon p-2"
+                  >monitoring</span
+                >
+              </span>
+              <span class="text-center">Track & Organize</span>
+            </div>
+
+            <div
+              class="col-8 col-md-3 d-flex flex-column justify-content-center align-items-center rounded p-3 flat-card"
+            >
+              <span class="service-icon-container">
+                <span
+                  class="material-symbols-outlined rounded-circle flat-card mb-3 service-icon p-2"
+                  >category</span
+                >
+              </span>
+              <span class="text-center">Categorization</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- {{-- Services Carousel --}} -->
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide carousel-fade flat-card rounded mx-3 mb-5 section-container"
+          data-bs-ride="carousel"
+        >
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="5"
+              aria-label="Slide 6"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="6"
+              aria-label="Slide 7"
+            ></button>
+          </div>
+
+          <!-- Contents -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./assets/img/imac-dashboard.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="./assets/img/qr-bus-stop-accepted-here.jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="./assets/img/qr-food-court.jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+
+            <!-- {{-- Dashboards --}} -->
+            <div class="carousel-item">
+              <img
+                src="./assets/img/man-on-desktop.jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="./assets/img/dashboard-5.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="./assets/img/dashboard-2.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="./assets/img/dashboard-1.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleSlidesOnly"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleSlidesOnly"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- {{-- About Section --}} -->
+        <section id="about" class="p-2 mb-5">
+          <!-- {{-- Section Header --}} -->
+          <div class="d-flex justify-content-center mb-2">
+            <span class="h3 border-bottom p-2">About PayMaker</span>
+          </div>
+
+          <div class="container flat-card">
+            <div class="container">
+              <div class="row">
+                <div
+                  class="col-12 col-lg-6 p-2 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="./assets/img/imac-cover.jpeg"
+                    alt=""
+                    class="img-fluid rounded flat-card p-1"
+                  />
+                </div>
+                <div class="col p-2">
+                  <span class="text-start" id="about-text">
+                    <p>
+                      At PayMaker Africa, our mission is to innovate payment
+                      solutions across Africa. We strive to provide a
+                      convenient, efficient and affordable way for churches,
+                      small businesses, universities and other institutions to
+                      send and receive payments.
+                    </p>
+
+                    <p>
+                      PayMaker provides value-added financial solutions and
+                      payment services that makes it easy to accept and make
+                      payments with ease and build a culture of saving.
+                    </p>
+
+                    <p>
+                      PayMaker's vision is to be the most innovative, seamless
+                      and dependable online payment and savings provider in
+                      Africa. We aim to serve as a reliable partner to
+                      individuals and companies in facilitating the unification
+                      of financial technology into everyday financial
+                      activities.
+                    </p>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- {{-- Partners Section --}} -->
+        <section id="partners" class="p-2 mb-5">
+          <!-- {{-- Section Header --}} -->
+          <div class="d-flex justify-content-center mb-2">
+            <span class="h3 border-bottom p-2">Partners</span>
+          </div>
+          <div
+            class="conatiner-fluid p-3 section-container justify-content-center align-items-center flat-card"
+          >
+            <div class="row justify-content-center">
+              <!-- <div
+                  class="col-3 col-md-1 d-flex flex-column justify-content-center align-items-center"
+                >
+                  <img
+                    src="./assets/img/fountain-of-life-logo.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div> -->
+
+              <div
+                class="col-4 d-flex flex-column justify-content-center align-items-center col-md-2 col-lg-1 p-2"
+              >
+                <img
+                  src="./assets/img/techstars-logo-light.png"
+                  class="img-fluid"
+                  alt=""
+                  id="techstars-logo"
+                />
+              </div>
+
+              <div
+                class="col-4 d-flex justify-content-center align-items-center col-md-2 col-lg-1 p-2"
+              >
+                <img
+                  src="./assets/img/ncair-logo.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+
+              <div
+                class="col-4 d-flex justify-content-center align-items-center col-md-2 col-lg-1 p-2"
+              >
+                <img
+                  src="./assets/img/nitda-logo.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- {{-- Platforms Section --}} -->
+        <section id="platforms" class="p-2 mb-5">
+          <!-- {{-- Section Header --}} -->
+          <div class="d-flex justify-content-center mb-2">
+            <span class="h3 border-bottom p-2">Platforms</span>
+          </div>
+          <div
+            class="container p-3 section-container justify-content-center align-items-center flat-card"
+          >
+            <div class="row justify-content-evenly">
+              <div
+                class="col-2 d-flex flex-column justify-content-center align-items-center col-md-1"
+              >
+                <img
+                  src="./assets/img/web.png"
+                  class="img-fluid"
+                  alt=""
+                  id="techstars-logo"
+                />
+              </div>
+
+              <div
+                class="col-2 d-flex justify-content-center align-items-center col-md-1"
+              >
+                <img
+                  src="./assets/img/app-store.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+
+              <div
+                class="col-2 d-flex justify-content-center align-items-center col-md-1"
+              >
+                <img
+                  src="./assets/img/play-store.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+
+              <div
+                class="col-2 d-flex justify-content-center align-items-center col-md-1"
+              >
+                <img
+                  src="./assets/img/windows-logo.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- {{-- Footer Start --}} -->
+        <footer class="flat-card">
+          <div class="container-fluid section-container p-3">
+            <!-- Newsletter -->
+            <div class="container">
+              <div class="row justify-content-center align-items-center p-4">
+                <div class="col-12 col-md-8">
+                  <div class="form-floating">
+                    <input
+                      type="email"
+                      class="form-control flat-card border-bottom border-none"
+                      id="floatingInput"
+                      placeholder="name@example.com"
+                    />
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                </div>
+                <div
+                  class="col-12 col-lg-2 d-flex justify-content-center align-items-center p-2"
+                >
+                  <button class="button rounded flat-card p-3">
+                    Join Newsletter
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div
+              id="contact"
+              class="d-flex flex-column justify-content-center align-items-center"
+            >
+              <span class="mt-1">hello@paymaker.africa</span>
+              <span class="mt-1">+234 904 0003 300</span>
+              <span class="mt-1">28, Coker Road, Ilupeju</span>
+            </div>
+
+            <section
+              class="container my-5 flat-card p-4 d-flex justify-content-center"
+            >
+              <a href="" class="me-4">
+                <i class="fa fa-facebook-f flat-card p-2"></i>
+              </a>
+              <a href="" class="me-4">
+                <i class="fa fa-twitter flat-card p-2"></i>
+              </a>
+              <a href="" class="me-4">
+                <i class="fa fa-instagram flat-card p-2"></i>
+              </a>
+              <a href="" class="me-4">
+                <i class="fa fa-linkedin flat-card p-2"></i>
+              </a>
+              <a href="" class="me-4">
+                <i class="fa fa-github flat-card p-2"></i>
+              </a>
+            </section>
+
+            <!-- Copyright -->
+            <div class="text-center p-3">
+              © 2022 Copyright:
+              <a class="" href="https://paymaker.africa/">PayMaker Africa</a>
+            </div>
+            <!-- Copyright -->
+          </div>
+        </footer>
+        <!-- {{-- Footer End --}} -->
+      </main>
+      <!-- {{-- Main End --}} -->
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./assets/js/main.js"></script>
+</html>
